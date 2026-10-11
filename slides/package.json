@@ -1,0 +1,21 @@
+{
+  "name": "c10-g4-incident-suite-slides",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export:pdf": "slidev export --format pdf --timeout 60000",
+    "export:pptx": "slidev export --format pptx --timeout 60000",
+    "export": "npm run export:pdf && npm run export:pptx",
+    "build:pages": "slidev build --base /C10_G4_Hackathon/ --out ../docs && cp c10-g4-incident-suite.pdf c10-g4-incident-suite.pptx ../docs/ && touch ../docs/.nojekyll"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.0.0",
+    "@slidev/theme-default": "latest",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.50.0"
+  }
+}

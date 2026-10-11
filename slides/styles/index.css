@@ -1,0 +1,93 @@
+/* Developer dark theme on top of @slidev/theme-default */
+:root {
+  --dev-bg: #0a1120;
+  --dev-panel: #111b30;
+  --dev-border: #1f2c48;
+  --dev-blue: #3b82f6;
+  --dev-teal: #14b8a6;
+  --dev-red: #ef4444;
+  --dev-muted: #8c99b5;
+}
+
+.slidev-layout {
+  background: radial-gradient(1200px 600px at 100% 0%, rgba(59, 130, 246, 0.10), transparent 60%),
+    radial-gradient(900px 500px at 0% 100%, rgba(20, 184, 166, 0.08), transparent 60%), var(--dev-bg) !important;
+  color: #e7edf8;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+.slidev-layout h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, #e7edf8, #93c5fd 60%, #5eead4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.slidev-layout h1 + p { color: var(--dev-muted); opacity: 1; }
+
+.slidev-layout code { font-family: "JetBrains Mono", "Fira Code", ui-monospace, monospace; }
+
+.slidev-layout table { font-size: 0.82em; }
+.slidev-layout th { color: #93c5fd; border-bottom: 1px solid var(--dev-border); }
+.slidev-layout td { border-bottom: 1px solid var(--dev-border); }
+
+.card {
+  background: var(--dev-panel);
+  border: 1px solid var(--dev-border);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.card h3 { margin: 0 0 6px; font-size: 1.05em; color: #e7edf8; }
+.card p, .card li { color: #b8c4dc; font-size: 0.85em; line-height: 1.45; }
+
+.tag {
+  display: inline-block;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.7em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--dev-border);
+  background: rgba(59, 130, 246, 0.12);
+  color: #93c5fd;
+  margin: 2px;
+}
+
+.metric { font-size: 2.1em; font-weight: 700; color: #5eead4; line-height: 1.1; }
+.metric-label { color: var(--dev-muted); font-size: 0.8em; }
+
+.shot {
+  border-radius: 10px;
+  border: 1px solid var(--dev-border);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+.mermaid { display: flex; justify-content: center; }
+
+.code-sm pre, .code-sm pre code, .code-sm .slidev-code { font-size: 11px !important; line-height: 1.5 !important; }
+.benefits .card { padding: 10px 14px; }
+.benefits .card p { margin: 0; }
+
+/* hand-drawn architecture diagram */
+.arch { display: grid; gap: 10px; margin-top: 18px; font-size: 13px; }
+.arch .row { display: flex; align-items: center; gap: 8px; }
+.arch .node { background: #14203a; border: 1px solid #2a3a5c; border-radius: 9px; padding: 8px 12px; color: #e7edf8; font-weight: 600; text-align: center; white-space: nowrap; }
+.arch .node small { display: block; font-weight: 400; color: #8c99b5; font-size: 11px; margin-top: 2px; }
+.arch .ui { border-color: #3b82f6; }
+.arch .ag { border-color: rgba(20,184,166,.6); }
+.arch .gr { border-color: #f59e0b; }
+.arch .wait { border-color: #8b5cf6; background: rgba(139,92,246,.15); }
+.arch .store { border-style: dashed; }
+.arch .ext { border-color: #475569; }
+.arch .human { border-color: #22c55e; background: rgba(34,197,94,.14); }
+.arch .arr { color: #5eead4; font-size: 18px; }
+.arch .down { color: #5eead4; font-size: 12px; padding-left: 180px; }
+.arch .lg { border: 1px dashed #3b82f6; border-radius: 14px; padding: 12px 14px 14px; background: rgba(59,130,246,.05); }
+.arch .lgt { color: #93c5fd; font-family: "JetBrains Mono", monospace; font-size: 11px; margin-bottom: 8px; }
+.arch .stack { display: grid; gap: 5px; }
+.arch .stack .node { padding: 5px 10px; }
+.arch .grow { flex: 1; }
+.seq svg { max-height: 330px !important; width: auto !important; margin: 0 auto; display: block; }
+.arch { font-size: 15px; gap: 14px; }
+.arch .node small { font-size: 12px; }
