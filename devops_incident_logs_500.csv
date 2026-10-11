@@ -1,0 +1,501 @@
+timestamp,request_id,service,host,level,message,error_code,trace_id,response_time_ms,environment
+2026-10-10T09:27:18Z,req-00001,shipping-service,pod-2,INFO,Cache refreshed,,trc-334053,357.45,production
+2026-10-10T09:32:23Z,req-00002,checkout-api,node-2,ERROR,Authentication token validation failed,AUTH_401,trc-542417,89.14,production
+2026-10-10T08:29:51Z,req-00003,payment-api,node-2,INFO,Cache refreshed,,trc-308496,1792.89,staging
+2026-10-10T08:30:05Z,req-00004,payment-api,pod-2,INFO,Health probe succeeded,,trc-832052,1062.31,staging
+2026-10-10T08:21:13Z,req-00005,checkout-api,pod-1,INFO,Health probe succeeded,,trc-498382,250.82,staging
+2026-10-10T09:22:25Z,req-00006,kubernetes,node-2,INFO,Request processed successfully,,trc-230889,2433.06,staging
+2026-10-10T08:10:45Z,req-00007,notification-service,pod-3,WARNING,Certificate expires soon,,trc-705397,488.8,production
+2026-10-10T08:06:15Z,req-00008,checkout-api,pod-2,WARNING,Connection pool usage above 80%,,trc-205907,956.51,staging
+2026-10-10T09:26:47Z,req-00009,payment-db,pod-3,ERROR,HTTP 500 returned to client,HTTP_500,trc-319684,1678.74,production
+2026-10-10T09:23:10Z,req-00010,inventory-service,pod-2,WARNING,Certificate expires soon,,trc-584714,954.84,production
+2026-10-10T09:33:28Z,req-00011,inventory-service,pod-1,INFO,Request processed successfully,,trc-944151,795.48,staging
+2026-10-10T08:09:02Z,req-00012,payment-db,pod-2,INFO,Cache refreshed,,trc-787277,1253.09,staging
+2026-10-10T08:19:30Z,req-00013,auth-service,node-2,INFO,Request processed successfully,,trc-375504,1870.06,staging
+2026-10-10T09:19:40Z,req-00014,order-api,node-2,INFO,Request processed successfully,,trc-617488,236.36,production
+2026-10-10T09:57:34Z,req-00015,order-api,node-1,INFO,Cache refreshed,,trc-725380,168.18,staging
+2026-10-10T09:21:21Z,req-00016,auth-service,pod-1,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-813328,1804.6,staging
+2026-10-10T09:44:56Z,req-00017,shipping-service,node-1,WARNING,Response time above threshold,,trc-265840,1139.77,staging
+2026-10-10T09:08:20Z,req-00018,checkout-api,pod-3,ERROR,Authentication token validation failed,AUTH_401,trc-982554,1600.98,production
+2026-10-10T08:20:52Z,req-00019,auth-service,node-2,INFO,Request processed successfully,,trc-100599,1501.37,staging
+2026-10-10T08:02:39Z,req-00020,shipping-service,pod-2,INFO,Health probe succeeded,,trc-160738,609.77,production
+2026-10-10T08:11:41Z,req-00021,auth-service,pod-2,ERROR,Database query timed out,DB_TIMEOUT,trc-234628,1652.78,production
+2026-10-10T08:36:11Z,req-00022,redis,pod-2,WARNING,Certificate expires soon,,trc-665492,1890.61,production
+2026-10-10T09:37:20Z,req-00023,payment-db,node-1,INFO,Cache refreshed,,trc-642717,1134.2,production
+2026-10-10T08:30:40Z,req-00024,notification-service,node-2,INFO,Request processed successfully,,trc-341292,1475.22,production
+2026-10-10T08:09:41Z,req-00025,inventory-service,pod-1,ERROR,Database query timed out,DB_TIMEOUT,trc-132938,2150.49,production
+2026-10-10T09:10:11Z,req-00026,kubernetes,pod-2,INFO,Cache refreshed,,trc-665427,339.46,staging
+2026-10-10T08:33:10Z,req-00027,inventory-service,pod-1,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-201639,1650.87,staging
+2026-10-10T08:57:49Z,req-00028,payment-api,pod-1,INFO,Cache refreshed,,trc-163556,1012.53,staging
+2026-10-10T09:49:18Z,req-00029,inventory-service,pod-2,ERROR,HTTP 500 returned to client,HTTP_500,trc-662336,1127.05,staging
+2026-10-10T08:25:03Z,req-00030,checkout-api,node-1,INFO,Request processed successfully,,trc-947272,2154.76,production
+2026-10-10T08:06:54Z,req-00031,payment-api,pod-1,WARNING,Certificate expires soon,,trc-890170,2123.25,production
+2026-10-10T08:55:29Z,req-00032,redis,pod-1,WARNING,Response time above threshold,,trc-272634,953.64,staging
+2026-10-10T08:36:12Z,req-00033,shipping-service,node-1,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-830429,2393.72,staging
+2026-10-10T08:21:08Z,req-00034,payment-api,node-2,INFO,Request processed successfully,,trc-871476,1360.07,staging
+2026-10-10T08:07:48Z,req-00035,auth-service,node-2,INFO,Health probe succeeded,,trc-265080,151.63,production
+2026-10-10T09:56:14Z,req-00036,checkout-api,pod-2,INFO,Cache refreshed,,trc-523389,308.52,production
+2026-10-10T09:19:02Z,req-00037,checkout-api,node-1,WARNING,Certificate expires soon,,trc-789305,1463.34,staging
+2026-10-10T08:35:36Z,req-00038,payment-db,pod-2,INFO,Cache refreshed,,trc-378517,995.51,staging
+2026-10-10T09:02:25Z,req-00039,payment-api,node-1,INFO,Request processed successfully,,trc-751332,2496.15,production
+2026-10-10T08:10:00Z,req-00040,shipping-service,pod-2,WARNING,Certificate expires soon,,trc-465962,2203.35,production
+2026-10-10T08:50:27Z,req-00041,auth-service,pod-3,INFO,Health probe succeeded,,trc-741390,2459.79,production
+2026-10-10T09:31:11Z,req-00042,checkout-api,pod-2,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-377312,297.42,production
+2026-10-10T09:41:21Z,req-00043,shipping-service,node-2,WARNING,Connection pool usage above 80%,,trc-320861,1796.85,production
+2026-10-10T09:33:51Z,req-00044,auth-service,node-1,WARNING,Connection pool usage above 80%,,trc-363319,2264.29,production
+2026-10-10T08:12:36Z,req-00045,payment-api,pod-1,WARNING,Connection pool usage above 80%,,trc-449759,1930.09,staging
+2026-10-10T08:22:03Z,req-00046,redis,node-2,ERROR,Authentication token validation failed,AUTH_401,trc-110139,288.57,production
+2026-10-10T09:14:29Z,req-00047,notification-service,node-2,INFO,Health probe succeeded,,trc-255287,1080.17,production
+2026-10-10T08:42:05Z,req-00048,payment-db,pod-2,INFO,Request processed successfully,,trc-815198,631.33,production
+2026-10-10T08:48:17Z,req-00049,notification-service,pod-2,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-348237,2162.87,production
+2026-10-10T08:56:17Z,req-00050,payment-db,node-1,INFO,Cache refreshed,,trc-941204,1678.07,production
+2026-10-10T08:36:25Z,req-00051,checkout-api,node-1,INFO,Cache refreshed,,trc-140605,2147.9,production
+2026-10-10T08:27:14Z,req-00052,payment-db,pod-3,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-960394,1990.41,production
+2026-10-10T08:30:26Z,req-00053,redis,pod-3,INFO,Request processed successfully,,trc-392136,2162.24,staging
+2026-10-10T08:47:56Z,req-00054,auth-service,pod-3,WARNING,Connection pool usage above 80%,,trc-128941,297.2,staging
+2026-10-10T08:24:22Z,req-00055,payment-api,pod-1,WARNING,Connection pool usage above 80%,,trc-725550,1092.06,staging
+2026-10-10T08:59:34Z,req-00056,checkout-api,node-1,WARNING,Certificate expires soon,,trc-704596,483.3,production
+2026-10-10T09:36:46Z,req-00057,auth-service,pod-2,INFO,Cache refreshed,,trc-481913,1083.93,staging
+2026-10-10T09:25:04Z,req-00058,shipping-service,node-2,INFO,Request processed successfully,,trc-424308,1670.56,staging
+2026-10-10T08:54:56Z,req-00059,order-api,pod-2,WARNING,Certificate expires soon,,trc-540869,1665.67,staging
+2026-10-10T09:32:28Z,req-00060,notification-service,node-2,ERROR,HTTP 500 returned to client,HTTP_500,trc-415568,1021.13,production
+2026-10-10T08:41:29Z,req-00061,notification-service,node-2,INFO,Health probe succeeded,,trc-786508,812.4,staging
+2026-10-10T09:00:22Z,req-00062,kubernetes,pod-2,WARNING,Certificate expires soon,,trc-790855,221.14,staging
+2026-10-10T08:12:45Z,req-00063,shipping-service,pod-2,ERROR,HTTP 500 returned to client,HTTP_500,trc-945742,505.83,production
+2026-10-10T08:06:18Z,req-00064,notification-service,pod-1,INFO,Health probe succeeded,,trc-577538,1041.96,production
+2026-10-10T09:38:04Z,req-00065,redis,pod-2,WARNING,Connection pool usage above 80%,,trc-254739,1643.58,production
+2026-10-10T09:42:31Z,req-00066,redis,pod-2,ERROR,Database query timed out,DB_TIMEOUT,trc-284430,2012.23,staging
+2026-10-10T08:06:51Z,req-00067,kubernetes,pod-2,WARNING,Response time above threshold,,trc-940346,1166.96,staging
+2026-10-10T09:43:07Z,req-00068,auth-service,node-1,ERROR,Authentication token validation failed,AUTH_401,trc-970914,2268.07,staging
+2026-10-10T08:21:43Z,req-00069,kubernetes,pod-3,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-888295,625.63,staging
+2026-10-10T09:44:33Z,req-00070,inventory-service,pod-3,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-561239,202.93,staging
+2026-10-10T08:32:00Z,req-00071,auth-service,pod-1,INFO,Health probe succeeded,,trc-245095,385.57,staging
+2026-10-10T09:34:44Z,req-00072,checkout-api,node-1,INFO,Request processed successfully,,trc-527398,833.89,staging
+2026-10-10T08:56:46Z,req-00073,redis,node-2,INFO,Health probe succeeded,,trc-829308,58.63,staging
+2026-10-10T09:05:07Z,req-00074,shipping-service,node-1,INFO,Health probe succeeded,,trc-994905,2230.19,staging
+2026-10-10T09:13:29Z,req-00075,notification-service,pod-2,ERROR,Authentication token validation failed,AUTH_401,trc-611945,556.36,staging
+2026-10-10T09:06:18Z,req-00076,redis,pod-2,INFO,Health probe succeeded,,trc-981334,1173.8,production
+2026-10-10T09:24:57Z,req-00077,notification-service,node-2,WARNING,Connection pool usage above 80%,,trc-795205,77.48,staging
+2026-10-10T08:18:31Z,req-00078,payment-api,pod-3,ERROR,HTTP 500 returned to client,HTTP_500,trc-497519,825.11,staging
+2026-10-10T08:44:37Z,req-00079,shipping-service,node-1,INFO,Health probe succeeded,,trc-364525,2088.93,staging
+2026-10-10T08:02:38Z,req-00080,payment-db,pod-2,ERROR,Database query timed out,DB_TIMEOUT,trc-781725,180.86,production
+2026-10-10T09:42:58Z,req-00081,inventory-service,pod-1,INFO,Request processed successfully,,trc-751517,389.43,production
+2026-10-10T09:04:39Z,req-00082,inventory-service,node-1,WARNING,Certificate expires soon,,trc-833442,648.05,staging
+2026-10-10T08:22:54Z,req-00083,checkout-api,pod-2,WARNING,Certificate expires soon,,trc-426147,279.17,production
+2026-10-10T08:42:35Z,req-00084,redis,pod-2,WARNING,Connection pool usage above 80%,,trc-179688,1484.32,production
+2026-10-10T08:13:54Z,req-00085,notification-service,pod-1,WARNING,Connection pool usage above 80%,,trc-934904,2459.77,production
+2026-10-10T08:47:24Z,req-00086,payment-db,pod-1,WARNING,Certificate expires soon,,trc-630538,1622.38,production
+2026-10-10T09:55:59Z,req-00087,checkout-api,node-1,INFO,Health probe succeeded,,trc-479781,1592.61,staging
+2026-10-10T09:36:34Z,req-00088,auth-service,pod-3,INFO,Request processed successfully,,trc-745830,2022.42,staging
+2026-10-10T09:03:28Z,req-00089,notification-service,pod-3,INFO,Cache refreshed,,trc-437960,2130.77,production
+2026-10-10T08:38:04Z,req-00090,kubernetes,node-2,ERROR,HTTP 500 returned to client,HTTP_500,trc-739979,1673.79,staging
+2026-10-10T08:03:55Z,req-00091,order-api,node-1,WARNING,Connection pool usage above 80%,,trc-322423,893.51,staging
+2026-10-10T08:46:28Z,req-00092,shipping-service,node-2,INFO,Cache refreshed,,trc-110644,1296.4,production
+2026-10-10T08:11:41Z,req-00093,kubernetes,node-2,INFO,Health probe succeeded,,trc-894993,608.41,staging
+2026-10-10T09:28:11Z,req-00094,payment-api,pod-1,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-408528,561.78,production
+2026-10-10T08:41:48Z,req-00095,kubernetes,node-2,WARNING,Connection pool usage above 80%,,trc-656711,865.96,staging
+2026-10-10T08:48:02Z,req-00096,shipping-service,pod-3,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-341736,310.43,production
+2026-10-10T08:43:04Z,req-00097,order-api,pod-2,INFO,Cache refreshed,,trc-326895,1849.13,staging
+2026-10-10T09:38:55Z,req-00098,notification-service,pod-3,WARNING,Certificate expires soon,,trc-205409,2083.24,staging
+2026-10-10T08:31:03Z,req-00099,payment-api,node-2,INFO,Health probe succeeded,,trc-232731,693.04,production
+2026-10-10T09:15:33Z,req-00100,kubernetes,pod-1,INFO,Request processed successfully,,trc-112861,1439.42,staging
+2026-10-10T09:05:21Z,req-00101,payment-api,pod-3,INFO,Request processed successfully,,trc-600935,294.08,production
+2026-10-10T08:54:42Z,req-00102,payment-api,pod-2,WARNING,Certificate expires soon,,trc-256445,2029.74,staging
+2026-10-10T08:11:37Z,req-00103,auth-service,node-1,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-735770,1494.36,production
+2026-10-10T09:45:54Z,req-00104,kubernetes,pod-3,WARNING,Connection pool usage above 80%,,trc-717113,2475.18,staging
+2026-10-10T09:17:38Z,req-00105,checkout-api,pod-2,WARNING,Certificate expires soon,,trc-755900,535.45,production
+2026-10-10T08:21:26Z,req-00106,checkout-api,pod-2,INFO,Cache refreshed,,trc-102805,1027.21,staging
+2026-10-10T08:39:45Z,req-00107,shipping-service,node-1,INFO,Health probe succeeded,,trc-174637,1721.59,staging
+2026-10-10T09:47:33Z,req-00108,inventory-service,node-1,ERROR,Authentication token validation failed,AUTH_401,trc-220351,1365.96,production
+2026-10-10T08:36:16Z,req-00109,payment-api,pod-2,ERROR,Database query timed out,DB_TIMEOUT,trc-931131,775.95,staging
+2026-10-10T08:59:57Z,req-00110,shipping-service,node-1,INFO,Cache refreshed,,trc-385470,1256.18,staging
+2026-10-10T08:59:46Z,req-00111,redis,pod-3,INFO,Request processed successfully,,trc-733039,633.42,production
+2026-10-10T08:31:15Z,req-00112,shipping-service,node-2,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-142185,1910.14,production
+2026-10-10T09:04:14Z,req-00113,shipping-service,pod-2,WARNING,Connection pool usage above 80%,,trc-713762,1095.35,staging
+2026-10-10T08:12:27Z,req-00114,payment-db,pod-3,WARNING,Connection pool usage above 80%,,trc-802685,270.45,production
+2026-10-10T08:45:01Z,req-00115,shipping-service,node-1,INFO,Health probe succeeded,,trc-953085,1903.64,production
+2026-10-10T09:02:05Z,req-00116,payment-db,pod-1,INFO,Health probe succeeded,,trc-910075,1016.4,production
+2026-10-10T09:29:47Z,req-00117,redis,pod-1,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-296694,1300.91,staging
+2026-10-10T09:25:23Z,req-00118,inventory-service,pod-3,INFO,Request processed successfully,,trc-675898,336.22,staging
+2026-10-10T08:59:49Z,req-00119,checkout-api,pod-1,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-760626,1526.09,production
+2026-10-10T09:36:54Z,req-00120,payment-api,node-2,INFO,Cache refreshed,,trc-527809,242.09,production
+2026-10-10T09:03:00Z,req-00121,kubernetes,pod-3,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-633590,1766.47,staging
+2026-10-10T09:53:58Z,req-00122,inventory-service,node-1,WARNING,Connection pool usage above 80%,,trc-678043,370.16,production
+2026-10-10T09:21:50Z,req-00123,checkout-api,pod-3,WARNING,Response time above threshold,,trc-910208,1977.12,staging
+2026-10-10T08:46:24Z,req-00124,payment-api,pod-3,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-861319,753.4,staging
+2026-10-10T09:58:08Z,req-00125,kubernetes,pod-3,INFO,Cache refreshed,,trc-448588,1384.27,staging
+2026-10-10T09:02:10Z,req-00126,inventory-service,node-2,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-501574,591.57,staging
+2026-10-10T08:05:57Z,req-00127,redis,node-1,INFO,Health probe succeeded,,trc-795928,1983.06,production
+2026-10-10T09:07:37Z,req-00128,auth-service,node-2,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-448121,2175.55,staging
+2026-10-10T08:13:36Z,req-00129,payment-api,pod-2,WARNING,Connection pool usage above 80%,,trc-529893,2178.62,production
+2026-10-10T08:10:12Z,req-00130,payment-db,node-2,WARNING,Connection pool usage above 80%,,trc-826353,999.73,production
+2026-10-10T09:56:17Z,req-00131,auth-service,node-1,INFO,Cache refreshed,,trc-432043,1570.73,staging
+2026-10-10T09:59:06Z,req-00132,checkout-api,pod-2,WARNING,Certificate expires soon,,trc-761820,1714.15,staging
+2026-10-10T08:31:03Z,req-00133,checkout-api,pod-1,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-565230,424.25,staging
+2026-10-10T08:03:57Z,req-00134,shipping-service,pod-3,INFO,Request processed successfully,,trc-493049,1082.41,production
+2026-10-10T09:12:31Z,req-00135,order-api,pod-2,INFO,Cache refreshed,,trc-283573,206.63,staging
+2026-10-10T09:24:36Z,req-00136,notification-service,pod-2,WARNING,Connection pool usage above 80%,,trc-343467,1158.26,staging
+2026-10-10T09:02:44Z,req-00137,kubernetes,pod-3,INFO,Request processed successfully,,trc-810526,1371.03,production
+2026-10-10T09:00:18Z,req-00138,redis,pod-3,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-579027,2114.81,production
+2026-10-10T08:52:31Z,req-00139,inventory-service,node-1,ERROR,Database query timed out,DB_TIMEOUT,trc-699704,903.81,staging
+2026-10-10T09:35:28Z,req-00140,redis,pod-3,INFO,Cache refreshed,,trc-108491,1419.16,production
+2026-10-10T09:22:47Z,req-00141,inventory-service,node-2,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-940886,887.28,production
+2026-10-10T09:24:46Z,req-00142,order-api,pod-1,INFO,Cache refreshed,,trc-757937,1619.39,staging
+2026-10-10T09:47:40Z,req-00143,payment-db,pod-2,INFO,Cache refreshed,,trc-194511,2274.97,staging
+2026-10-10T09:42:03Z,req-00144,order-api,node-2,INFO,Request processed successfully,,trc-483629,1331.82,staging
+2026-10-10T09:53:23Z,req-00145,shipping-service,pod-3,INFO,Health probe succeeded,,trc-943298,296.77,production
+2026-10-10T08:19:13Z,req-00146,redis,node-2,ERROR,HTTP 500 returned to client,HTTP_500,trc-483542,234.85,staging
+2026-10-10T08:01:54Z,req-00147,kubernetes,pod-3,INFO,Request processed successfully,,trc-805511,1875.04,staging
+2026-10-10T09:19:48Z,req-00148,payment-db,pod-1,INFO,Cache refreshed,,trc-807617,592.22,production
+2026-10-10T09:24:35Z,req-00149,payment-db,node-2,ERROR,Authentication token validation failed,AUTH_401,trc-332120,1622.65,staging
+2026-10-10T09:35:43Z,req-00150,checkout-api,pod-2,INFO,Health probe succeeded,,trc-147549,2366.19,staging
+2026-10-10T09:07:15Z,req-00151,auth-service,pod-2,INFO,Request processed successfully,,trc-507524,1139.57,staging
+2026-10-10T09:20:11Z,req-00152,redis,pod-1,ERROR,HTTP 500 returned to client,HTTP_500,trc-974190,1228.47,staging
+2026-10-10T08:38:11Z,req-00153,inventory-service,node-1,INFO,Health probe succeeded,,trc-566297,2376.88,staging
+2026-10-10T08:13:33Z,req-00154,auth-service,pod-3,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-163491,1001.37,production
+2026-10-10T08:16:40Z,req-00155,checkout-api,pod-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-772875,1602.34,production
+2026-10-10T08:06:54Z,req-00156,order-api,node-2,ERROR,HTTP 500 returned to client,HTTP_500,trc-315173,180.84,production
+2026-10-10T09:20:03Z,req-00157,payment-db,pod-2,INFO,Request processed successfully,,trc-926952,2252.32,production
+2026-10-10T08:37:51Z,req-00158,order-api,node-2,ERROR,HTTP 500 returned to client,HTTP_500,trc-362829,1998.3,production
+2026-10-10T09:30:15Z,req-00159,payment-api,pod-3,ERROR,HTTP 500 returned to client,HTTP_500,trc-928358,1973.19,staging
+2026-10-10T08:02:09Z,req-00160,order-api,node-1,INFO,Request processed successfully,,trc-651640,292.99,production
+2026-10-10T09:05:01Z,req-00161,auth-service,node-2,INFO,Health probe succeeded,,trc-214351,1135.49,production
+2026-10-10T09:23:58Z,req-00162,auth-service,pod-3,INFO,Cache refreshed,,trc-580292,1611.92,production
+2026-10-10T08:08:18Z,req-00163,redis,pod-1,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-614084,1783.88,staging
+2026-10-10T08:10:02Z,req-00164,notification-service,pod-2,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-168872,324.22,staging
+2026-10-10T08:52:00Z,req-00165,kubernetes,node-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-734836,1081.2,production
+2026-10-10T09:56:26Z,req-00166,inventory-service,node-1,WARNING,Certificate expires soon,,trc-573489,2221.35,staging
+2026-10-10T08:46:16Z,req-00167,redis,pod-1,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-427730,1072.64,staging
+2026-10-10T08:51:06Z,req-00168,checkout-api,pod-1,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-972176,222.56,staging
+2026-10-10T08:13:11Z,req-00169,order-api,node-2,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-162894,1470.3,staging
+2026-10-10T09:31:28Z,req-00170,redis,pod-1,INFO,Health probe succeeded,,trc-401601,1505.02,staging
+2026-10-10T08:14:08Z,req-00171,order-api,node-1,WARNING,Response time above threshold,,trc-335137,2119.71,staging
+2026-10-10T09:55:25Z,req-00172,shipping-service,node-2,WARNING,Response time above threshold,,trc-337144,2019.98,production
+2026-10-10T09:23:08Z,req-00173,payment-api,pod-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-386544,1759.72,staging
+2026-10-10T08:46:23Z,req-00174,order-api,node-2,INFO,Request processed successfully,,trc-789275,1007.95,production
+2026-10-10T09:41:10Z,req-00175,checkout-api,node-2,WARNING,Response time above threshold,,trc-325583,946.72,staging
+2026-10-10T08:46:32Z,req-00176,payment-db,node-2,INFO,Health probe succeeded,,trc-725185,221.54,production
+2026-10-10T08:21:14Z,req-00177,payment-api,pod-1,INFO,Cache refreshed,,trc-385320,1113.35,staging
+2026-10-10T09:06:18Z,req-00178,shipping-service,pod-2,WARNING,Connection pool usage above 80%,,trc-891615,1285.74,staging
+2026-10-10T08:58:41Z,req-00179,notification-service,node-1,INFO,Cache refreshed,,trc-652530,1671.16,production
+2026-10-10T08:30:06Z,req-00180,payment-api,pod-1,INFO,Cache refreshed,,trc-314353,760.53,production
+2026-10-10T09:44:46Z,req-00181,shipping-service,pod-3,INFO,Health probe succeeded,,trc-225812,29.25,staging
+2026-10-10T08:23:59Z,req-00182,inventory-service,node-2,INFO,Cache refreshed,,trc-685864,2085.05,staging
+2026-10-10T08:09:50Z,req-00183,payment-api,node-1,INFO,Cache refreshed,,trc-119651,1154.79,production
+2026-10-10T09:57:42Z,req-00184,notification-service,node-1,INFO,Health probe succeeded,,trc-843963,1603.95,staging
+2026-10-10T08:15:43Z,req-00185,order-api,node-2,INFO,Health probe succeeded,,trc-582446,2081.74,staging
+2026-10-10T08:12:01Z,req-00186,inventory-service,node-1,INFO,Request processed successfully,,trc-717476,1007.12,production
+2026-10-10T08:54:02Z,req-00187,payment-db,pod-2,ERROR,Third-party API returned 503,HTTP_503,trc-449247,1950.0,production
+2026-10-10T09:09:41Z,req-00188,auth-service,pod-2,WARNING,Certificate expires soon,,trc-913934,879.94,production
+2026-10-10T08:32:15Z,req-00189,inventory-service,pod-2,INFO,Health probe succeeded,,trc-731661,390.65,production
+2026-10-10T08:24:11Z,req-00190,kubernetes,node-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-896788,1452.88,staging
+2026-10-10T09:57:59Z,req-00191,order-api,node-1,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-171603,1177.61,staging
+2026-10-10T09:48:43Z,req-00192,payment-db,node-2,INFO,Request processed successfully,,trc-177794,782.92,staging
+2026-10-10T08:05:08Z,req-00193,checkout-api,pod-1,INFO,Health probe succeeded,,trc-744883,1489.26,staging
+2026-10-10T09:03:10Z,req-00194,payment-api,node-1,WARNING,Certificate expires soon,,trc-949153,1433.43,production
+2026-10-10T08:43:53Z,req-00195,order-api,pod-1,WARNING,Certificate expires soon,,trc-572407,267.72,staging
+2026-10-10T09:37:31Z,req-00196,order-api,pod-1,INFO,Cache refreshed,,trc-359778,1771.98,staging
+2026-10-10T09:11:33Z,req-00197,payment-db,pod-3,WARNING,Response time above threshold,,trc-396635,974.67,staging
+2026-10-10T09:32:41Z,req-00198,payment-db,pod-1,WARNING,Certificate expires soon,,trc-445705,245.32,staging
+2026-10-10T08:38:47Z,req-00199,notification-service,pod-2,INFO,Cache refreshed,,trc-449555,212.94,production
+2026-10-10T08:47:45Z,req-00200,redis,pod-2,INFO,Cache refreshed,,trc-723945,1775.0,production
+2026-10-10T08:42:16Z,req-00201,payment-db,pod-2,WARNING,Certificate expires soon,,trc-802667,1760.05,production
+2026-10-10T09:28:12Z,req-00202,payment-db,pod-1,WARNING,Certificate expires soon,,trc-480211,779.08,production
+2026-10-10T08:46:39Z,req-00203,inventory-service,pod-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-244247,395.81,staging
+2026-10-10T09:55:17Z,req-00204,auth-service,node-2,ERROR,Authentication token validation failed,AUTH_401,trc-139581,1658.2,production
+2026-10-10T09:21:32Z,req-00205,order-api,node-2,INFO,Request processed successfully,,trc-948343,2257.61,staging
+2026-10-10T08:05:57Z,req-00206,inventory-service,node-1,INFO,Cache refreshed,,trc-740255,719.47,staging
+2026-10-10T08:31:56Z,req-00207,kubernetes,pod-2,WARNING,Connection pool usage above 80%,,trc-485709,1698.98,staging
+2026-10-10T09:03:02Z,req-00208,auth-service,node-2,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-538997,2416.01,production
+2026-10-10T09:49:23Z,req-00209,payment-api,node-1,WARNING,Connection pool usage above 80%,,trc-489244,1390.81,production
+2026-10-10T09:37:07Z,req-00210,shipping-service,pod-1,ERROR,Database query timed out,DB_TIMEOUT,trc-900185,409.18,staging
+2026-10-10T09:10:05Z,req-00211,checkout-api,pod-2,INFO,Health probe succeeded,,trc-956375,1133.31,staging
+2026-10-10T08:03:38Z,req-00212,auth-service,pod-3,INFO,Health probe succeeded,,trc-347231,971.55,production
+2026-10-10T08:51:11Z,req-00213,checkout-api,pod-3,INFO,Health probe succeeded,,trc-929822,373.66,production
+2026-10-10T08:39:10Z,req-00214,order-api,node-1,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-570392,1542.22,production
+2026-10-10T08:02:35Z,req-00215,auth-service,node-2,INFO,Request processed successfully,,trc-653408,1063.9,staging
+2026-10-10T08:32:26Z,req-00216,inventory-service,node-1,INFO,Request processed successfully,,trc-769989,1986.81,staging
+2026-10-10T08:08:34Z,req-00217,notification-service,node-2,INFO,Health probe succeeded,,trc-117233,1583.57,production
+2026-10-10T09:38:06Z,req-00218,payment-api,node-2,INFO,Health probe succeeded,,trc-469954,609.0,staging
+2026-10-10T08:25:34Z,req-00219,auth-service,pod-3,WARNING,Response time above threshold,,trc-170966,2383.98,production
+2026-10-10T08:53:18Z,req-00220,redis,pod-3,ERROR,Database query timed out,DB_TIMEOUT,trc-365971,1870.82,staging
+2026-10-10T09:47:39Z,req-00221,checkout-api,node-2,INFO,Request processed successfully,,trc-870899,1894.13,production
+2026-10-10T08:06:03Z,req-00222,order-api,node-1,INFO,Health probe succeeded,,trc-829168,1201.54,production
+2026-10-10T09:50:47Z,req-00223,kubernetes,pod-1,INFO,Cache refreshed,,trc-407696,511.96,production
+2026-10-10T08:05:43Z,req-00224,auth-service,node-1,INFO,Health probe succeeded,,trc-955015,1362.15,staging
+2026-10-10T08:04:59Z,req-00225,shipping-service,pod-3,ERROR,HTTP 500 returned to client,HTTP_500,trc-918771,129.03,staging
+2026-10-10T08:37:18Z,req-00226,redis,node-1,INFO,Health probe succeeded,,trc-879414,1104.94,staging
+2026-10-10T08:46:17Z,req-00227,kubernetes,pod-3,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-936020,1303.0,production
+2026-10-10T09:39:16Z,req-00228,notification-service,pod-2,INFO,Health probe succeeded,,trc-671971,741.48,production
+2026-10-10T08:10:55Z,req-00229,shipping-service,node-1,INFO,Health probe succeeded,,trc-731894,1796.98,production
+2026-10-10T09:34:10Z,req-00230,payment-api,pod-3,INFO,Health probe succeeded,,trc-744718,2495.39,staging
+2026-10-10T09:27:18Z,req-00231,checkout-api,node-1,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-480959,1287.58,production
+2026-10-10T08:04:15Z,req-00232,kubernetes,pod-1,INFO,Cache refreshed,,trc-232361,177.41,staging
+2026-10-10T08:49:26Z,req-00233,payment-api,node-2,INFO,Cache refreshed,,trc-260891,1700.86,staging
+2026-10-10T08:50:47Z,req-00234,notification-service,pod-2,INFO,Request processed successfully,,trc-655178,923.71,staging
+2026-10-10T09:28:41Z,req-00235,payment-api,pod-2,INFO,Request processed successfully,,trc-623285,1299.19,production
+2026-10-10T08:35:44Z,req-00236,kubernetes,pod-2,ERROR,Third-party API returned 503,HTTP_503,trc-741599,721.09,staging
+2026-10-10T08:27:19Z,req-00237,kubernetes,pod-2,INFO,Request processed successfully,,trc-848022,1118.33,production
+2026-10-10T09:50:39Z,req-00238,payment-db,pod-1,WARNING,Connection pool usage above 80%,,trc-676713,1360.01,staging
+2026-10-10T09:56:14Z,req-00239,order-api,pod-3,INFO,Cache refreshed,,trc-633469,568.36,production
+2026-10-10T09:48:08Z,req-00240,payment-api,pod-3,INFO,Health probe succeeded,,trc-680933,1434.97,staging
+2026-10-10T09:49:43Z,req-00241,notification-service,pod-1,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-168941,780.13,staging
+2026-10-10T09:11:46Z,req-00242,notification-service,pod-1,INFO,Health probe succeeded,,trc-231414,2431.23,production
+2026-10-10T09:01:26Z,req-00243,payment-db,pod-2,WARNING,Certificate expires soon,,trc-969325,1952.85,production
+2026-10-10T09:44:49Z,req-00244,auth-service,pod-1,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-971776,319.16,production
+2026-10-10T08:41:31Z,req-00245,inventory-service,pod-3,INFO,Health probe succeeded,,trc-644103,2238.37,production
+2026-10-10T08:34:12Z,req-00246,shipping-service,pod-2,INFO,Cache refreshed,,trc-755383,764.03,production
+2026-10-10T09:08:37Z,req-00247,notification-service,pod-2,WARNING,Certificate expires soon,,trc-279516,1650.24,staging
+2026-10-10T09:55:02Z,req-00248,payment-api,pod-1,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-147670,2371.88,staging
+2026-10-10T09:28:54Z,req-00249,redis,node-2,INFO,Cache refreshed,,trc-770030,85.41,staging
+2026-10-10T09:27:38Z,req-00250,inventory-service,node-1,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-411882,1139.32,production
+2026-10-10T08:21:34Z,req-00251,kubernetes,pod-2,INFO,Health probe succeeded,,trc-456717,1520.58,staging
+2026-10-10T09:57:37Z,req-00252,payment-db,node-1,ERROR,Third-party API returned 503,HTTP_503,trc-237118,1904.06,production
+2026-10-10T08:43:34Z,req-00253,shipping-service,node-1,INFO,Request processed successfully,,trc-359961,360.79,production
+2026-10-10T08:39:37Z,req-00254,inventory-service,pod-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-952993,825.32,staging
+2026-10-10T08:25:55Z,req-00255,auth-service,node-1,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-622987,2198.9,staging
+2026-10-10T08:03:09Z,req-00256,auth-service,node-1,INFO,Health probe succeeded,,trc-352422,545.71,staging
+2026-10-10T08:06:38Z,req-00257,notification-service,node-1,INFO,Health probe succeeded,,trc-399628,1346.36,production
+2026-10-10T08:58:50Z,req-00258,payment-db,node-1,INFO,Health probe succeeded,,trc-483713,122.65,production
+2026-10-10T09:17:51Z,req-00259,auth-service,pod-3,WARNING,Connection pool usage above 80%,,trc-177103,972.01,staging
+2026-10-10T09:44:21Z,req-00260,notification-service,pod-1,WARNING,Certificate expires soon,,trc-234913,2437.96,staging
+2026-10-10T08:50:57Z,req-00261,auth-service,pod-3,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-891638,369.23,staging
+2026-10-10T09:08:16Z,req-00262,order-api,pod-3,INFO,Request processed successfully,,trc-943019,1189.62,staging
+2026-10-10T08:20:20Z,req-00263,order-api,pod-3,WARNING,Certificate expires soon,,trc-742848,803.14,staging
+2026-10-10T09:24:10Z,req-00264,notification-service,pod-3,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-631958,2072.44,staging
+2026-10-10T09:36:45Z,req-00265,payment-api,pod-3,WARNING,Connection pool usage above 80%,,trc-447329,1687.78,staging
+2026-10-10T09:19:41Z,req-00266,payment-api,node-2,INFO,Cache refreshed,,trc-597643,671.17,production
+2026-10-10T09:38:29Z,req-00267,order-api,node-2,INFO,Health probe succeeded,,trc-759580,1805.75,staging
+2026-10-10T08:20:10Z,req-00268,payment-api,node-2,ERROR,HTTP 500 returned to client,HTTP_500,trc-834549,283.64,production
+2026-10-10T09:00:12Z,req-00269,redis,pod-2,INFO,Request processed successfully,,trc-530311,1259.53,staging
+2026-10-10T09:59:10Z,req-00270,payment-api,pod-2,ERROR,Third-party API returned 503,HTTP_503,trc-643878,526.28,staging
+2026-10-10T09:30:24Z,req-00271,payment-db,pod-2,WARNING,Connection pool usage above 80%,,trc-581992,2281.19,staging
+2026-10-10T09:14:35Z,req-00272,shipping-service,node-2,INFO,Cache refreshed,,trc-607699,488.74,production
+2026-10-10T08:38:05Z,req-00273,shipping-service,pod-3,WARNING,Response time above threshold,,trc-839142,526.12,staging
+2026-10-10T08:43:17Z,req-00274,shipping-service,pod-3,WARNING,Certificate expires soon,,trc-227794,1437.96,staging
+2026-10-10T08:53:52Z,req-00275,shipping-service,pod-1,ERROR,HTTP 500 returned to client,HTTP_500,trc-401602,2388.73,production
+2026-10-10T08:47:17Z,req-00276,kubernetes,pod-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-311883,2071.6,staging
+2026-10-10T09:16:44Z,req-00277,checkout-api,node-2,WARNING,Response time above threshold,,trc-876880,1471.21,production
+2026-10-10T08:06:55Z,req-00278,inventory-service,pod-2,WARNING,Certificate expires soon,,trc-155040,259.49,staging
+2026-10-10T09:37:56Z,req-00279,order-api,pod-1,WARNING,Certificate expires soon,,trc-677086,2445.0,production
+2026-10-10T08:55:33Z,req-00280,kubernetes,pod-2,WARNING,Connection pool usage above 80%,,trc-892630,2410.15,staging
+2026-10-10T08:38:58Z,req-00281,notification-service,pod-2,WARNING,Response time above threshold,,trc-661147,1849.33,production
+2026-10-10T08:23:54Z,req-00282,payment-api,node-1,INFO,Request processed successfully,,trc-926236,1243.51,staging
+2026-10-10T09:59:42Z,req-00283,notification-service,node-2,INFO,Health probe succeeded,,trc-212512,2321.85,staging
+2026-10-10T08:38:51Z,req-00284,auth-service,node-2,WARNING,Certificate expires soon,,trc-617904,2224.26,production
+2026-10-10T09:56:11Z,req-00285,inventory-service,pod-1,WARNING,Connection pool usage above 80%,,trc-446747,414.61,staging
+2026-10-10T09:28:30Z,req-00286,payment-api,pod-3,INFO,Request processed successfully,,trc-929179,744.61,production
+2026-10-10T08:23:57Z,req-00287,redis,node-1,WARNING,Certificate expires soon,,trc-640310,826.54,staging
+2026-10-10T09:31:22Z,req-00288,kubernetes,pod-3,INFO,Request processed successfully,,trc-360096,27.01,staging
+2026-10-10T08:32:09Z,req-00289,payment-db,pod-3,INFO,Health probe succeeded,,trc-710754,1809.98,production
+2026-10-10T08:35:42Z,req-00290,inventory-service,pod-1,WARNING,Certificate expires soon,,trc-800224,304.38,staging
+2026-10-10T08:21:48Z,req-00291,shipping-service,pod-1,INFO,Cache refreshed,,trc-769737,2291.16,staging
+2026-10-10T08:50:10Z,req-00292,order-api,node-1,WARNING,Response time above threshold,,trc-260626,1142.9,staging
+2026-10-10T08:56:46Z,req-00293,auth-service,pod-2,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-898867,626.19,production
+2026-10-10T09:11:44Z,req-00294,payment-db,pod-1,INFO,Cache refreshed,,trc-691573,289.4,production
+2026-10-10T09:18:11Z,req-00295,payment-db,node-2,WARNING,Response time above threshold,,trc-563303,299.44,production
+2026-10-10T09:37:52Z,req-00296,auth-service,node-1,WARNING,Response time above threshold,,trc-947975,148.53,production
+2026-10-10T09:10:04Z,req-00297,payment-api,node-2,INFO,Cache refreshed,,trc-584838,1685.19,staging
+2026-10-10T09:38:45Z,req-00298,payment-api,pod-2,INFO,Health probe succeeded,,trc-706403,191.84,staging
+2026-10-10T08:47:02Z,req-00299,payment-api,pod-1,ERROR,Authentication token validation failed,AUTH_401,trc-595002,89.02,staging
+2026-10-10T08:24:34Z,req-00300,redis,pod-3,ERROR,Third-party API returned 503,HTTP_503,trc-501058,1126.86,staging
+2026-10-10T08:51:17Z,req-00301,auth-service,pod-2,INFO,Cache refreshed,,trc-785280,2152.11,production
+2026-10-10T08:24:22Z,req-00302,auth-service,pod-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-863214,2447.02,production
+2026-10-10T09:43:14Z,req-00303,kubernetes,node-2,INFO,Health probe succeeded,,trc-544730,1334.51,production
+2026-10-10T08:33:47Z,req-00304,shipping-service,pod-2,WARNING,Response time above threshold,,trc-860242,1916.07,production
+2026-10-10T09:50:31Z,req-00305,payment-api,pod-2,WARNING,Certificate expires soon,,trc-316092,177.55,production
+2026-10-10T09:00:57Z,req-00306,payment-api,pod-2,WARNING,Certificate expires soon,,trc-876513,120.15,staging
+2026-10-10T08:31:59Z,req-00307,order-api,node-2,WARNING,Response time above threshold,,trc-403314,593.06,staging
+2026-10-10T09:18:50Z,req-00308,payment-db,pod-2,WARNING,Certificate expires soon,,trc-416422,2191.88,production
+2026-10-10T08:56:27Z,req-00309,auth-service,node-2,INFO,Request processed successfully,,trc-870925,2279.83,staging
+2026-10-10T09:15:53Z,req-00310,redis,node-2,WARNING,Connection pool usage above 80%,,trc-434217,1743.81,staging
+2026-10-10T08:20:22Z,req-00311,auth-service,node-1,INFO,Request processed successfully,,trc-352673,2124.86,staging
+2026-10-10T09:57:04Z,req-00312,payment-api,node-2,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-532723,2419.79,production
+2026-10-10T08:53:01Z,req-00313,payment-db,pod-1,INFO,Request processed successfully,,trc-571635,2119.36,production
+2026-10-10T09:13:07Z,req-00314,payment-api,pod-3,ERROR,HTTP 500 returned to client,HTTP_500,trc-495489,1687.44,production
+2026-10-10T09:59:16Z,req-00315,auth-service,pod-2,INFO,Cache refreshed,,trc-602681,530.13,staging
+2026-10-10T08:41:23Z,req-00316,inventory-service,pod-2,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-877493,302.12,staging
+2026-10-10T08:33:07Z,req-00317,inventory-service,node-1,WARNING,Certificate expires soon,,trc-350956,1384.68,staging
+2026-10-10T08:51:58Z,req-00318,payment-db,pod-3,WARNING,Certificate expires soon,,trc-374267,905.52,staging
+2026-10-10T09:03:37Z,req-00319,kubernetes,pod-3,INFO,Cache refreshed,,trc-312994,933.06,staging
+2026-10-10T08:06:14Z,req-00320,order-api,pod-1,WARNING,Response time above threshold,,trc-373441,1387.75,staging
+2026-10-10T08:40:18Z,req-00321,inventory-service,node-1,INFO,Health probe succeeded,,trc-697467,2085.07,staging
+2026-10-10T09:15:10Z,req-00322,payment-db,pod-3,WARNING,Certificate expires soon,,trc-900441,2055.76,staging
+2026-10-10T09:02:55Z,req-00323,order-api,pod-2,INFO,Health probe succeeded,,trc-855303,1370.9,production
+2026-10-10T09:14:01Z,req-00324,auth-service,pod-1,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-979827,2118.28,production
+2026-10-10T09:44:21Z,req-00325,inventory-service,pod-1,INFO,Request processed successfully,,trc-841521,386.06,production
+2026-10-10T09:09:02Z,req-00326,notification-service,node-2,WARNING,Response time above threshold,,trc-606676,1651.62,production
+2026-10-10T08:00:54Z,req-00327,payment-api,pod-1,WARNING,Connection pool usage above 80%,,trc-655134,1808.26,staging
+2026-10-10T08:02:20Z,req-00328,redis,pod-2,WARNING,Certificate expires soon,,trc-212214,2295.94,production
+2026-10-10T08:32:54Z,req-00329,shipping-service,pod-3,INFO,Cache refreshed,,trc-380310,1989.39,production
+2026-10-10T08:50:56Z,req-00330,notification-service,pod-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-831105,572.38,production
+2026-10-10T09:29:15Z,req-00331,checkout-api,node-1,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-497687,949.15,staging
+2026-10-10T08:07:39Z,req-00332,order-api,pod-1,WARNING,Certificate expires soon,,trc-624139,2114.87,staging
+2026-10-10T09:17:15Z,req-00333,auth-service,pod-1,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-340927,536.43,staging
+2026-10-10T08:37:00Z,req-00334,shipping-service,node-2,INFO,Request processed successfully,,trc-690882,1648.69,production
+2026-10-10T09:56:06Z,req-00335,notification-service,pod-2,INFO,Request processed successfully,,trc-888795,2053.52,staging
+2026-10-10T08:10:30Z,req-00336,inventory-service,node-2,INFO,Cache refreshed,,trc-975194,2125.11,staging
+2026-10-10T08:52:24Z,req-00337,checkout-api,node-2,ERROR,HTTP 500 returned to client,HTTP_500,trc-881667,2436.07,production
+2026-10-10T08:13:20Z,req-00338,payment-db,node-2,INFO,Request processed successfully,,trc-906360,1538.52,staging
+2026-10-10T09:45:36Z,req-00339,shipping-service,node-1,INFO,Cache refreshed,,trc-614435,578.06,staging
+2026-10-10T08:58:57Z,req-00340,redis,pod-1,INFO,Cache refreshed,,trc-909676,1550.35,production
+2026-10-10T09:37:21Z,req-00341,order-api,node-1,INFO,Health probe succeeded,,trc-846247,1961.89,production
+2026-10-10T09:40:59Z,req-00342,checkout-api,pod-1,INFO,Health probe succeeded,,trc-105447,2357.97,staging
+2026-10-10T08:49:08Z,req-00343,order-api,pod-1,ERROR,Database query timed out,DB_TIMEOUT,trc-296494,1083.14,staging
+2026-10-10T08:14:06Z,req-00344,auth-service,pod-1,INFO,Health probe succeeded,,trc-725920,1499.13,staging
+2026-10-10T09:57:55Z,req-00345,redis,node-1,INFO,Health probe succeeded,,trc-917018,220.9,production
+2026-10-10T09:18:05Z,req-00346,redis,pod-2,WARNING,Certificate expires soon,,trc-245584,679.61,staging
+2026-10-10T09:07:19Z,req-00347,redis,pod-3,INFO,Request processed successfully,,trc-541557,756.38,production
+2026-10-10T08:49:18Z,req-00348,kubernetes,node-2,INFO,Request processed successfully,,trc-746624,496.92,production
+2026-10-10T08:18:29Z,req-00349,payment-db,node-2,INFO,Health probe succeeded,,trc-498343,2012.15,staging
+2026-10-10T09:00:06Z,req-00350,notification-service,pod-2,INFO,Cache refreshed,,trc-415029,808.46,production
+2026-10-10T09:05:24Z,req-00351,payment-db,pod-3,INFO,Health probe succeeded,,trc-870571,1740.44,staging
+2026-10-10T09:18:37Z,req-00352,redis,pod-3,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-956156,1966.81,staging
+2026-10-10T08:15:32Z,req-00353,notification-service,node-2,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-288667,1707.46,production
+2026-10-10T09:39:17Z,req-00354,inventory-service,node-1,WARNING,Certificate expires soon,,trc-936433,735.41,production
+2026-10-10T09:51:48Z,req-00355,kubernetes,pod-2,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-764100,764.05,staging
+2026-10-10T09:29:55Z,req-00356,redis,pod-1,INFO,Health probe succeeded,,trc-570880,2476.84,staging
+2026-10-10T09:19:29Z,req-00357,redis,node-2,INFO,Cache refreshed,,trc-138551,1978.9,staging
+2026-10-10T09:35:47Z,req-00358,notification-service,pod-1,ERROR,Authentication token validation failed,AUTH_401,trc-214682,1924.7,staging
+2026-10-10T08:22:42Z,req-00359,notification-service,node-1,WARNING,Response time above threshold,,trc-889245,835.68,staging
+2026-10-10T08:14:27Z,req-00360,inventory-service,node-2,INFO,Health probe succeeded,,trc-883132,1301.81,production
+2026-10-10T09:00:51Z,req-00361,notification-service,node-2,INFO,Health probe succeeded,,trc-258067,868.97,production
+2026-10-10T09:05:54Z,req-00362,checkout-api,pod-1,INFO,Health probe succeeded,,trc-971699,2352.28,production
+2026-10-10T08:47:33Z,req-00363,inventory-service,node-2,INFO,Health probe succeeded,,trc-606384,877.27,production
+2026-10-10T08:59:49Z,req-00364,payment-db,pod-1,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-414849,121.26,production
+2026-10-10T08:03:05Z,req-00365,checkout-api,pod-2,ERROR,Third-party API returned 503,HTTP_503,trc-876459,617.34,production
+2026-10-10T09:15:21Z,req-00366,redis,node-1,INFO,Cache refreshed,,trc-343118,1996.41,production
+2026-10-10T08:25:26Z,req-00367,redis,pod-1,WARNING,Connection pool usage above 80%,,trc-873207,1539.13,production
+2026-10-10T09:01:22Z,req-00368,payment-api,pod-2,WARNING,Connection pool usage above 80%,,trc-315780,703.08,production
+2026-10-10T09:18:49Z,req-00369,order-api,pod-3,INFO,Cache refreshed,,trc-441819,500.71,production
+2026-10-10T08:35:49Z,req-00370,auth-service,pod-3,WARNING,Connection pool usage above 80%,,trc-725969,977.71,staging
+2026-10-10T09:20:08Z,req-00371,kubernetes,node-2,INFO,Health probe succeeded,,trc-280908,2036.21,staging
+2026-10-10T09:23:53Z,req-00372,order-api,pod-3,WARNING,Certificate expires soon,,trc-223586,604.05,production
+2026-10-10T08:24:59Z,req-00373,auth-service,node-1,INFO,Request processed successfully,,trc-538555,1495.1,staging
+2026-10-10T08:57:45Z,req-00374,auth-service,pod-2,INFO,Cache refreshed,,trc-681868,425.5,staging
+2026-10-10T08:19:09Z,req-00375,notification-service,pod-1,INFO,Health probe succeeded,,trc-476479,2380.09,staging
+2026-10-10T08:18:38Z,req-00376,auth-service,node-2,INFO,Health probe succeeded,,trc-784793,1242.47,staging
+2026-10-10T08:56:44Z,req-00377,kubernetes,pod-2,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-186686,1417.84,production
+2026-10-10T08:39:52Z,req-00378,auth-service,pod-3,INFO,Request processed successfully,,trc-276379,1954.04,staging
+2026-10-10T09:15:03Z,req-00379,checkout-api,pod-3,WARNING,Certificate expires soon,,trc-912764,1362.33,staging
+2026-10-10T09:14:00Z,req-00380,kubernetes,node-2,ERROR,Database query timed out,DB_TIMEOUT,trc-329157,2474.54,production
+2026-10-10T09:40:29Z,req-00381,shipping-service,pod-1,ERROR,HTTP 500 returned to client,HTTP_500,trc-571578,664.41,production
+2026-10-10T08:59:56Z,req-00382,inventory-service,pod-2,ERROR,Database query timed out,DB_TIMEOUT,trc-950083,1846.66,staging
+2026-10-10T09:57:33Z,req-00383,redis,pod-2,ERROR,Third-party API returned 503,HTTP_503,trc-746081,356.7,production
+2026-10-10T09:51:04Z,req-00384,notification-service,pod-3,INFO,Request processed successfully,,trc-658136,709.9,production
+2026-10-10T08:44:11Z,req-00385,shipping-service,node-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-380329,2381.47,production
+2026-10-10T08:18:30Z,req-00386,payment-api,pod-3,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-787757,325.95,production
+2026-10-10T08:34:05Z,req-00387,inventory-service,node-1,INFO,Health probe succeeded,,trc-613234,364.01,staging
+2026-10-10T09:25:43Z,req-00388,checkout-api,pod-1,INFO,Health probe succeeded,,trc-522419,1293.88,staging
+2026-10-10T09:34:51Z,req-00389,kubernetes,node-1,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-443187,1459.07,production
+2026-10-10T09:39:47Z,req-00390,checkout-api,node-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-517035,552.4,staging
+2026-10-10T09:52:37Z,req-00391,payment-db,pod-3,INFO,Health probe succeeded,,trc-454161,1372.8,production
+2026-10-10T09:17:17Z,req-00392,payment-api,pod-1,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-204411,1569.19,staging
+2026-10-10T08:02:13Z,req-00393,kubernetes,node-1,INFO,Request processed successfully,,trc-100708,2479.68,staging
+2026-10-10T08:27:37Z,req-00394,shipping-service,pod-2,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-387330,242.42,staging
+2026-10-10T08:34:11Z,req-00395,order-api,pod-1,INFO,Cache refreshed,,trc-515594,1567.75,production
+2026-10-10T08:58:36Z,req-00396,checkout-api,pod-1,WARNING,Certificate expires soon,,trc-323788,1197.25,production
+2026-10-10T09:21:03Z,req-00397,kubernetes,pod-1,INFO,Cache refreshed,,trc-108454,1742.04,production
+2026-10-10T09:57:27Z,req-00398,kubernetes,pod-1,INFO,Request processed successfully,,trc-340068,963.84,production
+2026-10-10T08:14:05Z,req-00399,order-api,node-1,INFO,Health probe succeeded,,trc-911032,2035.29,production
+2026-10-10T09:27:35Z,req-00400,checkout-api,node-2,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-690653,31.1,production
+2026-10-10T09:00:05Z,req-00401,order-api,node-1,INFO,Request processed successfully,,trc-746002,1719.55,production
+2026-10-10T08:11:50Z,req-00402,checkout-api,node-2,ERROR,HTTP 500 returned to client,HTTP_500,trc-865470,966.24,staging
+2026-10-10T08:42:56Z,req-00403,shipping-service,pod-1,ERROR,HTTP 500 returned to client,HTTP_500,trc-360221,1387.96,staging
+2026-10-10T09:46:21Z,req-00404,shipping-service,pod-2,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-642899,1521.25,production
+2026-10-10T09:42:06Z,req-00405,payment-api,pod-2,INFO,Cache refreshed,,trc-618927,970.86,production
+2026-10-10T09:08:12Z,req-00406,auth-service,pod-1,WARNING,Response time above threshold,,trc-478638,2335.47,production
+2026-10-10T08:52:48Z,req-00407,redis,pod-3,ERROR,Authentication token validation failed,AUTH_401,trc-672896,1710.53,staging
+2026-10-10T09:45:10Z,req-00408,checkout-api,pod-1,INFO,Cache refreshed,,trc-374921,547.2,production
+2026-10-10T09:47:45Z,req-00409,auth-service,node-1,INFO,Health probe succeeded,,trc-544150,1757.51,production
+2026-10-10T09:27:27Z,req-00410,order-api,pod-3,WARNING,Certificate expires soon,,trc-187657,781.67,production
+2026-10-10T09:50:19Z,req-00411,redis,node-2,INFO,Health probe succeeded,,trc-765105,1910.43,production
+2026-10-10T08:42:20Z,req-00412,inventory-service,pod-1,WARNING,Certificate expires soon,,trc-356355,224.67,staging
+2026-10-10T08:15:50Z,req-00413,payment-api,pod-3,WARNING,Certificate expires soon,,trc-798435,1856.82,production
+2026-10-10T08:16:18Z,req-00414,payment-api,pod-2,INFO,Request processed successfully,,trc-620526,2383.01,staging
+2026-10-10T08:22:47Z,req-00415,shipping-service,pod-1,INFO,Cache refreshed,,trc-908903,2250.74,staging
+2026-10-10T09:50:11Z,req-00416,checkout-api,pod-3,INFO,Cache refreshed,,trc-846925,2437.88,production
+2026-10-10T09:07:44Z,req-00417,payment-api,node-1,WARNING,Connection pool usage above 80%,,trc-694423,425.53,production
+2026-10-10T08:34:49Z,req-00418,checkout-api,pod-2,ERROR,Authentication token validation failed,AUTH_401,trc-876764,1276.97,production
+2026-10-10T09:57:14Z,req-00419,payment-api,node-1,ERROR,HTTP 500 returned to client,HTTP_500,trc-481657,963.62,production
+2026-10-10T08:24:26Z,req-00420,auth-service,node-1,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-335421,811.29,staging
+2026-10-10T09:38:20Z,req-00421,notification-service,pod-3,INFO,Request processed successfully,,trc-225200,1260.08,production
+2026-10-10T08:24:29Z,req-00422,payment-api,node-1,INFO,Cache refreshed,,trc-172274,2193.71,staging
+2026-10-10T09:45:36Z,req-00423,checkout-api,node-2,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-578933,29.84,production
+2026-10-10T08:39:48Z,req-00424,notification-service,pod-2,WARNING,Connection pool usage above 80%,,trc-586462,927.0,staging
+2026-10-10T09:45:29Z,req-00425,auth-service,pod-2,ERROR,Third-party API returned 503,HTTP_503,trc-257880,25.88,staging
+2026-10-10T08:03:15Z,req-00426,payment-api,pod-3,INFO,Health probe succeeded,,trc-101533,1899.73,staging
+2026-10-10T09:55:55Z,req-00427,checkout-api,pod-2,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-655550,2457.96,staging
+2026-10-10T09:07:10Z,req-00428,shipping-service,pod-1,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-146032,2303.97,staging
+2026-10-10T09:35:41Z,req-00429,checkout-api,node-2,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-200219,1268.52,staging
+2026-10-10T08:10:13Z,req-00430,redis,pod-2,WARNING,Response time above threshold,,trc-348273,736.27,staging
+2026-10-10T09:49:20Z,req-00431,payment-db,pod-3,INFO,Cache refreshed,,trc-574751,687.17,production
+2026-10-10T08:27:40Z,req-00432,checkout-api,pod-2,INFO,Cache refreshed,,trc-210790,419.29,staging
+2026-10-10T08:42:52Z,req-00433,payment-db,pod-2,INFO,Cache refreshed,,trc-573869,777.69,staging
+2026-10-10T09:56:23Z,req-00434,shipping-service,node-2,INFO,Request processed successfully,,trc-142288,545.4,staging
+2026-10-10T08:20:15Z,req-00435,payment-db,node-1,INFO,Request processed successfully,,trc-638401,131.89,staging
+2026-10-10T08:35:31Z,req-00436,payment-api,node-1,ERROR,HTTP 500 returned to client,HTTP_500,trc-996114,1135.98,production
+2026-10-10T08:12:55Z,req-00437,checkout-api,pod-1,WARNING,Response time above threshold,,trc-164664,2077.63,production
+2026-10-10T08:17:50Z,req-00438,payment-db,pod-1,INFO,Health probe succeeded,,trc-710610,1469.44,production
+2026-10-10T08:02:58Z,req-00439,kubernetes,pod-2,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-196446,2263.64,staging
+2026-10-10T08:16:43Z,req-00440,payment-api,pod-2,INFO,Health probe succeeded,,trc-701761,1088.56,staging
+2026-10-10T09:07:44Z,req-00441,redis,pod-2,INFO,Cache refreshed,,trc-471136,544.64,production
+2026-10-10T08:37:32Z,req-00442,payment-api,node-2,INFO,Request processed successfully,,trc-749253,1546.27,staging
+2026-10-10T09:08:06Z,req-00443,kubernetes,pod-1,INFO,Cache refreshed,,trc-191982,706.64,production
+2026-10-10T08:57:14Z,req-00444,inventory-service,node-2,INFO,Cache refreshed,,trc-933456,58.63,staging
+2026-10-10T09:46:45Z,req-00445,auth-service,node-1,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-460745,2282.57,staging
+2026-10-10T08:53:01Z,req-00446,payment-db,node-2,INFO,Request processed successfully,,trc-329659,82.97,staging
+2026-10-10T08:07:59Z,req-00447,auth-service,pod-3,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-904092,1464.13,production
+2026-10-10T08:21:47Z,req-00448,inventory-service,pod-3,INFO,Cache refreshed,,trc-659614,2042.55,production
+2026-10-10T09:44:19Z,req-00449,notification-service,node-1,CRITICAL,Circuit breaker opened,CIRCUIT_BREAKER_OPEN,trc-472039,2338.66,production
+2026-10-10T08:24:02Z,req-00450,payment-db,node-2,INFO,Health probe succeeded,,trc-129576,1761.6,staging
+2026-10-10T09:17:30Z,req-00451,inventory-service,node-1,WARNING,Certificate expires soon,,trc-668458,779.54,staging
+2026-10-10T08:05:10Z,req-00452,notification-service,pod-2,INFO,Request processed successfully,,trc-120896,1320.86,production
+2026-10-10T08:45:17Z,req-00453,order-api,pod-3,ERROR,HTTP 500 returned to client,HTTP_500,trc-851763,451.88,staging
+2026-10-10T08:08:07Z,req-00454,order-api,pod-1,INFO,Cache refreshed,,trc-987599,1320.47,staging
+2026-10-10T08:09:54Z,req-00455,redis,node-2,INFO,Cache refreshed,,trc-205939,848.04,staging
+2026-10-10T08:18:37Z,req-00456,kubernetes,pod-3,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-282664,1770.89,staging
+2026-10-10T08:30:28Z,req-00457,redis,pod-3,WARNING,Response time above threshold,,trc-869649,1724.36,production
+2026-10-10T08:24:15Z,req-00458,notification-service,node-1,ERROR,Third-party API returned 503,HTTP_503,trc-992083,2485.76,production
+2026-10-10T08:24:51Z,req-00459,inventory-service,node-2,WARNING,Certificate expires soon,,trc-209167,2342.35,production
+2026-10-10T08:45:12Z,req-00460,payment-db,pod-3,ERROR,HTTP 500 returned to client,HTTP_500,trc-276042,1594.11,production
+2026-10-10T09:52:11Z,req-00461,payment-db,node-1,ERROR,Third-party API returned 503,HTTP_503,trc-111949,670.38,production
+2026-10-10T09:34:38Z,req-00462,checkout-api,pod-1,INFO,Health probe succeeded,,trc-150486,970.98,staging
+2026-10-10T08:22:42Z,req-00463,redis,pod-3,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-672547,944.62,staging
+2026-10-10T09:47:41Z,req-00464,inventory-service,pod-2,ERROR,Third-party API returned 503,HTTP_503,trc-573209,193.54,production
+2026-10-10T08:40:15Z,req-00465,checkout-api,pod-1,INFO,Health probe succeeded,,trc-458411,433.56,staging
+2026-10-10T08:21:58Z,req-00466,checkout-api,pod-3,ERROR,Authentication token validation failed,AUTH_401,trc-722886,2463.34,staging
+2026-10-10T09:36:11Z,req-00467,order-api,node-2,INFO,Cache refreshed,,trc-555292,401.19,production
+2026-10-10T08:45:12Z,req-00468,redis,node-2,INFO,Request processed successfully,,trc-857111,2314.68,staging
+2026-10-10T09:30:11Z,req-00469,checkout-api,pod-1,INFO,Request processed successfully,,trc-511987,1433.71,staging
+2026-10-10T08:20:58Z,req-00470,redis,pod-1,INFO,Request processed successfully,,trc-408857,2061.5,staging
+2026-10-10T08:27:15Z,req-00471,order-api,pod-3,INFO,Request processed successfully,,trc-185916,1189.19,production
+2026-10-10T08:42:06Z,req-00472,kubernetes,pod-3,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-195563,1608.25,staging
+2026-10-10T08:25:14Z,req-00473,payment-db,pod-2,INFO,Health probe succeeded,,trc-567429,121.1,staging
+2026-10-10T09:03:29Z,req-00474,notification-service,pod-1,INFO,Health probe succeeded,,trc-258471,1883.07,production
+2026-10-10T08:11:42Z,req-00475,redis,node-2,WARNING,Certificate expires soon,,trc-338564,1388.47,staging
+2026-10-10T09:51:44Z,req-00476,kubernetes,node-2,WARNING,Certificate expires soon,,trc-347088,1195.89,production
+2026-10-10T08:53:54Z,req-00477,payment-api,node-2,ERROR,Third-party API returned 503,HTTP_503,trc-698967,2252.13,production
+2026-10-10T08:16:25Z,req-00478,order-api,pod-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-322182,2023.07,production
+2026-10-10T08:05:49Z,req-00479,redis,pod-2,INFO,Cache refreshed,,trc-962520,1571.79,staging
+2026-10-10T08:43:39Z,req-00480,checkout-api,node-1,ERROR,Database query timed out,DB_TIMEOUT,trc-683390,999.41,staging
+2026-10-10T09:56:57Z,req-00481,payment-api,node-2,INFO,Health probe succeeded,,trc-716118,1311.18,staging
+2026-10-10T08:15:21Z,req-00482,notification-service,node-2,INFO,Request processed successfully,,trc-710981,1898.36,production
+2026-10-10T08:14:25Z,req-00483,shipping-service,node-2,WARNING,Response time above threshold,,trc-460572,2195.95,staging
+2026-10-10T08:52:17Z,req-00484,notification-service,node-1,WARNING,Certificate expires soon,,trc-139285,438.78,staging
+2026-10-10T08:19:38Z,req-00485,redis,pod-1,WARNING,Certificate expires soon,,trc-515018,2225.04,staging
+2026-10-10T09:34:16Z,req-00486,kubernetes,pod-3,INFO,Cache refreshed,,trc-490532,60.38,staging
+2026-10-10T08:42:27Z,req-00487,checkout-api,pod-2,INFO,Health probe succeeded,,trc-240913,758.2,staging
+2026-10-10T09:45:40Z,req-00488,redis,node-2,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-776913,232.32,staging
+2026-10-10T08:28:51Z,req-00489,kubernetes,node-2,ERROR,Pod restarted: OOMKilled,OOMKILLED,trc-492073,2054.33,production
+2026-10-10T08:08:57Z,req-00490,redis,pod-2,INFO,Cache refreshed,,trc-918430,2129.73,production
+2026-10-10T08:23:43Z,req-00491,payment-api,pod-2,INFO,Request processed successfully,,trc-134677,1146.56,staging
+2026-10-10T09:36:12Z,req-00492,kubernetes,node-2,INFO,Health probe succeeded,,trc-516224,1592.17,production
+2026-10-10T09:33:00Z,req-00493,kubernetes,node-2,INFO,Health probe succeeded,,trc-567773,452.18,staging
+2026-10-10T09:20:07Z,req-00494,order-api,pod-3,WARNING,Connection pool usage above 80%,,trc-885342,2078.87,production
+2026-10-10T08:38:55Z,req-00495,order-api,node-2,INFO,Request processed successfully,,trc-917711,2412.64,production
+2026-10-10T09:28:23Z,req-00496,shipping-service,node-1,INFO,Request processed successfully,,trc-638214,59.93,production
+2026-10-10T09:04:43Z,req-00497,order-api,node-2,ERROR,Third-party API returned 503,HTTP_503,trc-939767,31.07,staging
+2026-10-10T09:23:03Z,req-00498,shipping-service,node-1,ERROR,Unable to connect to Redis,ECONNREFUSED,trc-494763,2130.45,staging
+2026-10-10T08:34:24Z,req-00499,auth-service,node-2,INFO,Health probe succeeded,,trc-516444,1465.37,production
+2026-10-10T09:09:50Z,req-00500,auth-service,node-2,CRITICAL,Service unavailable: dependency failure,DEPENDENCY_FAILURE,trc-738635,713.87,production
