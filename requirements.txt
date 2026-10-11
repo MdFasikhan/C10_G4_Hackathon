@@ -1,0 +1,25 @@
+# Runtime dependencies, pinned to versions verified together (Python 3.14, macOS arm64; also work on 3.11+).
+
+# --- Web API ---
+fastapi==0.142.4
+uvicorn[standard]==0.54.0
+python-multipart==0.0.32       # file uploads
+
+# --- UI ---
+streamlit==1.65.0
+
+# --- Agent orchestration ---
+langgraph==1.2.14              # pulls in langchain-core
+
+# --- LLM client (OpenRouter is OpenAI-compatible) ---
+openai==3.28.0
+
+# --- Runbook retrieval ---
+chromadb==1.5.9
+sentence-transformers==6.1.0   # local embeddings (pulls in torch)
+
+# --- HTTP / config ---
+httpx==0.28.1
+pydantic==2.13.5
+pydantic-settings==2.15.0
+python-dotenv==1.2.4

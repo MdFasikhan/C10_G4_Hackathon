@@ -1,0 +1,6 @@
+2026-10-10T08:00:01.000Z service=inventory-api level=INFO message="Application started in 2.1s"
+2026-10-10T08:00:05.000Z service=inventory-api level=INFO message="Health probe ok: readiness=true"
+2026-10-10T08:00:10.000Z service=inventory-api level=INFO message="GET /items 200 in 12ms" trace_id=trc-9001
+2026-10-10T08:00:12.000Z service=inventory-api level=DEBUG message="Cache hit ratio 0.97"
+2026-10-10T08:00:20.000Z service=inventory-api level=INFO message="Scheduled sync completed: 1200 items"
+2026-10-10T08:00:30.000Z service=inventory-api level=INFO message="GET /items/42 200 in 9ms" trace_id=trc-9002

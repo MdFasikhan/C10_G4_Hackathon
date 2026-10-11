@@ -1,0 +1,13 @@
+timestamp,level,service,message,error_code,trace_id,host
+2026-10-10T12:01:01.000Z,INFO,order-api,Order creation request received,,trc-3001,order-api-1
+2026-10-10T12:01:02.150Z,ERROR,order-api,Database insert failed due to deadlock,DB_DEADLOCK,trc-3001,order-api-1
+2026-10-10T12:01:03.300Z,WARNING,order-db,Long-running transaction detected; duration 45 seconds,,trc-3001,order-db-1
+2026-10-10T12:01:04.420Z,ERROR,order-api,HTTP 500 returned to client,,trc-3002,order-api-2
+2026-10-10T12:01:05.600Z,CRITICAL,order-api,Order processing queue depth exceeded 10000 messages,,trc-3002,order-api-2
+2026-10-10T12:01:06.750Z,ERROR,kubernetes,Pod order-api-5f8f9b7c-k9l2m restart count increased to 5,,,node-3
+2026-10-10T12:01:07.900Z,WARNING,order-api,Memory usage reached 92% of container limit,,,order-api-2
+2026-10-10T12:01:08.950Z,ERROR,order-api,Unable to connect to message broker at rabbitmq:5672,ECONNREFUSED,trc-3003,order-api-3
+2026-10-10T12:01:09.100Z,WARNING,order-api,TLS certificate for orders.example.com expires in 4 days,,,order-api-3
+2026-10-10T12:01:10.250Z,ERROR,shipping-service,Third-party shipping API returned 504 Gateway Timeout,HTTP_504,trc-3004,shipping-1
+2026-10-10T12:01:11.400Z,INFO,order-api,Health probe failed: readiness=false,,trc-3002,order-api-2
+2026-10-10T12:01:12.500Z,ERROR,order-api,Authentication failed for internal service account,AUTH_401,trc-3005,order-api-1

@@ -1,0 +1,16 @@
+[project]
+name = "c10-g4-hackathon"
+version = "1.0.0"
+description = "Multi-Agent DevOps Incident Analysis Suite: Streamlit + FastAPI + LangGraph + ChromaDB + OpenRouter"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py311"

@@ -1,0 +1,9 @@
+2026-10-10T09:12:01.120Z service=payment-api level=INFO message="Payment request received" trace_id=trc-1001
+2026-10-10T09:12:02.450Z service=payment-api level=ERROR error_code=DB_TIMEOUT message="Database query timed out after 30000 ms" trace_id=trc-1001
+2026-10-10T09:12:03.010Z service=payment-db level=WARN message="Connection pool usage at 98%; active connections 49/50"
+2026-10-10T09:12:04.780Z service=payment-api level=ERROR message="HTTP 500 returned to client" trace_id=trc-1002
+2026-10-10T09:12:05.110Z service=payment-api level=ERROR message="HTTP 500 returned to client" trace_id=trc-1003
+2026-10-10T09:12:06.320Z service=payment-api level=CRITICAL message="Circuit breaker opened for payment-processing dependency"
+2026-10-10T09:12:07.900Z service=kubernetes level=ERROR message="Pod payment-api-7d9f8b6c-x2lpq restarted: OOMKilled"
+2026-10-10T09:12:08.450Z service=payment-api level=ERROR message="Certificate for api.payment.example.com expires in 2 days"
+2026-10-10T09:12:09.010Z service=payment-api level=INFO message="Health probe failed: readiness=false"

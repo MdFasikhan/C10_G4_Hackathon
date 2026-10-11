@@ -1,0 +1,28 @@
+# Secrets
+.env
+
+# Local data (database, vector index, uploads, logs)
+data/*.db
+data/*.db-*
+data/chroma/
+data/chroma_eval/
+data/uploads/*
+data/logs/*
+!data/**/.gitkeep
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+data/hf_cache/
+
+# Eval reports
+reports/

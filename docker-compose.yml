@@ -1,0 +1,22 @@
+services:
+  api:
+    build: .
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000
+    ports: ["8000:8000"]
+    env_file: [.env]
+    volumes: ["./data:/app/data"]
+    restart: unless-stopped
+
+  ui:
+    build: .
+    command: streamlit run app/streamlit_app.py --server.port 8501 --server.address 0.0.0.0
+    ports: ["8501:8501"]
+    environment:
+      API_BASE_URL: http://api:8000
+    healthcheck:
+      disable: true
+    depends_on:
+      api:
+        condition: service_healthy
+    volumes: ["./data:/app/data"]
+    restart: unless-stopped
