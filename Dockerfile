@@ -1,7 +1,15 @@
 FROM python:3.12-slim
 
-ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1 \
-    HF_HOME=/app/data/hf_cache
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1
+
+# Everything the app WRITES lives in /app/storage, so a volume can be mounted there.
+# /app/data keeps the files shipped with the code (runbooks, sample logs); mounting a volume
+# over it would hide them.
+ENV DATABASE_PATH=/app/storage/incident_suite.db \
+    CHROMA_PERSIST_DIR=/app/storage/chroma \
+    UPLOAD_DIR=/app/storage/uploads \
+    APP_LOG_FILE=/app/storage/logs/app.jsonl \
+    HF_HOME=/app/storage/hf_cache
 
 WORKDIR /app
 COPY requirements.txt .
@@ -10,7 +18,7 @@ RUN pip install torch --index-url https://download.pytorch.org/whl/cpu \
  && pip install -r requirements.txt
 
 COPY . .
-RUN useradd --create-home --uid 1000 appuser && mkdir -p data && chown -R appuser:appuser /app
+RUN useradd --create-home --uid 1000 appuser && mkdir -p data storage && chown -R appuser:appuser /app
 USER appuser
 
 # Hosting platforms such as Railway pass the port in $PORT; locally it defaults to 8000.

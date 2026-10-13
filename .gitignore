@@ -29,3 +29,6 @@ reports/
 
 # Local copy of the Railway variables (contains secrets)
 railway.env
+
+# Docker volume for local runs (database, index, uploads)
+storage/
