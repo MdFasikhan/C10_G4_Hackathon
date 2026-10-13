@@ -76,7 +76,7 @@
   /* ================= backend integration ================= */
   // Served by FastAPI at /ui → same origin. Opened any other way (e.g. `make mock-ui`) → API on localhost:8000.
   const API_BASE = location.pathname.startsWith("/ui") ? "" : "http://localhost:8000";
-  const LIVE = { ok: false, error: "", auth: false, slack: { mode: "simulation", channel: "#sre-incidents" }, jira: { mode: "simulation", project_key: "OPS", base_url: "" } };
+  const LIVE = { ok: false, error: "", auth: false, samples: [], slack: { mode: "simulation", channel: "#sre-incidents" }, jira: { mode: "simulation", project_key: "OPS", base_url: "" } };
   const apiKey = () => { try { return sessionStorage.getItem("apiKey") || ""; } catch { return ""; } };
   async function apiFetch(path, opts = {}) {
     const headers = { ...(opts.headers || {}) };
@@ -162,6 +162,7 @@
     try {
       const [health, integ] = await Promise.all([apiFetch("/health"), apiFetch("/api/integrations")]);
       Object.assign(LIVE, { ok: true, error: "", auth: health.auth_enabled, slack: integ.slack, jira: integ.jira });
+      LIVE.samples = await apiFetch("/api/samples").catch(() => []);
       await loadReal();
     } catch (e) {
       LIVE.ok = false; LIVE.error = e.message;
@@ -325,6 +326,9 @@
         <div class="types"><span>.log</span><span>.txt</span><span>.json</span><span>.csv</span></div>
       </div>
       <input type="file" id="fileInput" accept=".log,.txt,.json,.csv" hidden>
+      ${LIVE.samples.length ? `<label class="samplepick"><span>No log file handy? Try a sample:</span>
+        <select class="inp" data-sample aria-label="Load a sample log"><option value="">Choose a sample log…</option>
+          ${LIVE.samples.map((x) => `<option value="${esc(x.name)}" ${u?.name === x.name ? "selected" : ""}>${esc(x.name)} · ${num(x.lines)} lines</option>`).join("")}</select></label>` : ""}
       ${u ? `<div class="fileitem"><div class="fi">${icon("file")}</div><div class="fm"><b>${esc(u.name)}</b>
           <small>${bytes(u.size)}${u.lines != null ? ` · ${num(u.lines)} lines` : ""} · ${u.progress < 100 ? `Uploading ${Math.round(u.progress)}%` : "Ready"}</small>
           <div class="pbar"><i style="width:${u.progress}%"></i></div></div>
@@ -339,6 +343,15 @@
     const ready = !!(u && u.progress >= 100), start = $("#startBtn"), hint = $("#startHint");
     if (start) start.disabled = !ready;
     if (hint) hint.textContent = ready ? `Ready to analyze ${u.name}` : u ? "Reading the file…" : "Choose a file to enable this button.";
+  }
+  /* Fetch a sample log from the API and treat it exactly like an uploaded file. */
+  async function loadSample(name) {
+    if (!name) return;
+    try {
+      const res = await fetch(API_BASE + "/api/samples/" + encodeURIComponent(name), { headers: apiKey() ? { "X-API-Key": apiKey() } : {} });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      takeFile(new File([await res.text()], name, { type: "text/plain" }));
+    } catch (e) { S.uploadError = `Could not load the sample: ${e.message}`; renderUpload(); }
   }
   function takeFile(file) {
     const ext = (file.name.match(/\.[^.]+$/) || [""])[0].toLowerCase();
@@ -1178,6 +1191,7 @@
   document.addEventListener("change", (e) => {
     const t = e.target;
     if (t.dataset.cfg && t.type === "checkbox") S.cfg[t.dataset.cfg] = t.checked;
+    if (t.hasAttribute("data-sample")) loadSample(t.value);
   });
   $("#env").addEventListener("change", (e) => { S.env = e.target.value; S.cfg.env = S.env; tstate("dash").page = 1; if (currentPage === "dashboard") render(); toast(`Environment: ${S.env}`, "Dashboard figures updated"); });
   $("#globalSearch").addEventListener("submit", (e) => {

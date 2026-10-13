@@ -166,3 +166,15 @@ def test_integration_modes_can_be_switched_at_runtime(monkeypatch):
     assert client.put("/api/integrations", json={"slack_mode": "live"}).json()["slack"]["mode"] == "live"
     assert client.put("/api/integrations", json={"slack_mode": "simulation"}).json()["slack"]["mode"] == "simulation"
     assert client.put("/api/integrations", json={"jira_mode": "bogus"}).status_code == 422
+
+
+def test_sample_logs_are_listed_and_served():
+    samples = client.get("/api/samples").json()
+    names = {s["name"] for s in samples}
+    assert "devops_incident_logs_500.csv" in names and "payment_api_incident.log" in names
+    big = next(s for s in samples if s["name"] == "devops_incident_logs_500.csv")
+    assert big["lines"] == 501 and big["size_bytes"] > 0
+    body = client.get("/api/samples/payment_api_incident.log")
+    assert body.status_code == 200 and "payment-api" in body.text
+    assert client.get("/api/samples/..%2F..%2F.env").status_code == 404
+    assert client.get("/api/samples/nope.log").status_code == 404

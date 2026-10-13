@@ -5,9 +5,11 @@ guardrails as the automated flow, and Slack/Jira run live or simulated according
 """
 from __future__ import annotations
 
+from pathlib import Path
 from typing import Literal, Optional
 
 from fastapi import APIRouter, Depends, HTTPException
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
 from agents.jira_ticket_agent import PRIORITY_BY_SEVERITY, VALID_PRIORITIES, _clean_labels, deliver_ticket
@@ -72,6 +74,36 @@ def set_integration_modes(request: IntegrationModes):
             logger.warning("%s changed from %s to %s by %s", name, getattr(settings, name), value, request.actor)
             setattr(settings, name, value)
     return _integrations()
+
+
+SAMPLE_EXTENSIONS = {".log", ".txt", ".json", ".jsonl", ".csv"}
+
+
+def _sample_files() -> dict[str, Path]:
+    folder = settings.sample_log_path
+    if not folder.is_dir():
+        return {}
+    return {p.name: p for p in sorted(folder.iterdir()) if p.is_file() and p.suffix.lower() in SAMPLE_EXTENSIONS}
+
+
+@router.get("/samples")
+def list_sample_logs():
+    """Example log files shipped in data/sample_logs/, offered on the New Analysis page."""
+    samples = []
+    for name, path in _sample_files().items():
+        with path.open("rb") as handle:
+            lines = sum(1 for line in handle if line.strip())
+        samples.append({"name": name, "size_bytes": path.stat().st_size, "lines": lines})
+    return samples
+
+
+@router.get("/samples/{name}")
+def get_sample_log(name: str):
+    """Download one sample log. Only names from the listing are served (no path traversal)."""
+    path = _sample_files().get(name)
+    if not path:
+        raise HTTPException(status_code=404, detail="Sample log not found.")
+    return FileResponse(path, media_type="text/plain", filename=name)
 
 
 def _load(analysis_id: str, incident_id: str | None = None) -> tuple[AnalysisResult, Incident | None, RemediationPlan | None]:

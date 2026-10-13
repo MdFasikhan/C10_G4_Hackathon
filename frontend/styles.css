@@ -478,3 +478,5 @@ tr.expand td{background:var(--bg2);padding:14px 12px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 .seg button:disabled{opacity:.4;cursor:not-allowed}
+.samplepick{display:flex;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.samplepick select{flex:1;min-width:220px;height:40px}

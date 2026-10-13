@@ -72,7 +72,7 @@ make ui    # Terminal 2: http://localhost:8501
 ```
 Or start both with Docker: `docker compose up --build`.
 
-Pick a bundled sample from `data/sample_logs/` in the UI, or upload your own file
+Pick a bundled sample from `data/sample_logs/` in the UI ("No log file handy? Try a sample"), or upload your own file
 (`.log .txt .json .jsonl .csv`, max 20 MB). Supported formats: `key=value` text, JSON Lines,
 JSON arrays and CSV.
 
@@ -102,6 +102,7 @@ Per-incident endpoints (each call is audited and passes the outbound guardrails)
 | POST | `/api/analyses/{id}/incidents/{incident_id}/dismiss` | Don't send: record the decision |
 | POST | `/api/analyses/{id}/incidents/{incident_id}/slack` · `/jira` | Send only one of the two |
 | GET | `/api/integrations` | Slack/Jira mode, channel and project (no secrets) |
+| GET | `/api/samples`, `/api/samples/{name}` | Sample logs from `data/sample_logs/`, offered on New Analysis |
 
 The analysis moves to `COMPLETED` once every critical incident has been sent or dismissed.
 
