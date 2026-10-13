@@ -18,6 +18,12 @@ RUN pip install torch --index-url https://download.pytorch.org/whl/cpu \
  && pip install -r requirements.txt
 
 COPY . .
+# Read-only files shipped with the code get their own folder, so they stay visible even if a
+# volume is mounted over /app/data by mistake.
+RUN mkdir -p /app/bundled && cp -r data/runbooks data/sample_logs /app/bundled/
+ENV RUNBOOK_DIR=/app/bundled/runbooks \
+    SAMPLE_LOG_DIR=/app/bundled/sample_logs
+
 RUN useradd --create-home --uid 1000 appuser && mkdir -p data storage && chown -R appuser:appuser /app
 USER appuser
 
