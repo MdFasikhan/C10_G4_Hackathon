@@ -26,3 +26,6 @@ data/hf_cache/
 
 # Eval reports
 reports/
+
+# Local copy of the Railway variables (contains secrets)
+railway.env

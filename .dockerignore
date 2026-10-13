@@ -10,3 +10,11 @@ data/uploads/*
 data/logs/*
 tests/
 data/hf_cache/
+
+# Not needed in the server image
+slides/
+docs/
+reports/
+railway.env
+*.pdf
+*.pptx
